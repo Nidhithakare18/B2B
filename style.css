@@ -1,0 +1,354 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.home{
+    background-image: url('img/homepage.png');  
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    top: 0%;
+    width: 98%;
+}
+.logo{
+    margin: 10px;
+}
+.logo_img{
+    height: 80px;
+    width: 80px;
+}
+.side_logo h3{
+    color: white;
+}
+.nav2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+nav ul{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    margin-inline: 60px;
+    font-size: 20px;
+    color: white;
+    display: flex;
+}
+.icon{
+    display: none;
+    font-size: 20px;
+    color: white;
+    align-items: center;
+    margin-left: 300px;
+}
+
+/*about */
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.about .aCard{
+    width: 80%;
+    padding: 10px;
+    color: rgb(29, 116, 238);
+    text-align: center;
+}
+
+.head{
+    text-align: center;
+    color: rgb(29, 133, 212);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cards .crd{
+    margin: 30px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    width: 280px;
+    border-radius: 20px;
+    background-image: url("img/a1.jfif");
+    background-size: cover;
+}
+#crd2{
+    background-image: url("img/a2.jpg");
+    background-size: cover;
+}
+#crd3{
+    background-image: url("img/a3.jpg");
+    background-size: cover;
+}
+#crd4{
+    background-image: url("img/a4.png");
+    background-size: cover;
+}
+#crd5{
+    background-image: url("img/a5.png");
+    background-size: cover;
+}
+#crd6{
+    background-image: url("img/a6.png");
+    background-size: cover;
+}
+
+/*services */
+
+.service_section .service_wrapper .service_cards{
+    display: flex;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    scroll-behavior: smooth; 
+}
+.service_section .service_wrapper .service_cards .scrd{
+    margin-inline: 80px;
+    padding: 10px;
+    text-align: center;
+    width: calc(100% / 3);
+    object-fit: cover;
+    color: rgb(29, 106, 213);
+    border-bottom: 10px solid gainsboro;
+    animation-name: scrollLeft;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes scroLLLeft {
+    to {
+        left: -10px;
+    }
+} 
+.service_section .service_wrapper{
+    margin: 0%;
+} 
+.service_section .service_wrapper span{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    line-height: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(213, 216, 221);
+    border-radius: 50%;
+    transform: translateY(-50%);    
+} 
+#left{
+    margin-left: 2%;
+}
+#right{
+    margin-left: 92%;
+}
+@media only screen and (max-width: 900px){
+    .service_section .service_wrapper .service_cards .scrd{
+        width: calc(100% / 2);
+    }
+}
+@media only screen and (max-width: 550px){
+    .service_section .service_wrapper .service_cards .scrd{
+        width: 100%;
+    }
+}
+
+
+
+/*slider */
+
+.slider_section{
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider_wrapper{
+    position: relative;
+    max-width: 50%;
+    max-height: fit-content;
+}
+.slider{
+    display: flex;
+    aspect-ratio: 8/8;
+    overflow-x:hidden;
+    scroll-snap-type: x mandatory;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 5px;
+}
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+}
+.slider_nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider_nav a{
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: rgb(18, 127, 199);
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+    margin-top: 10px;
+}
+
+/*menu */
+
+.menu_section{
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu_wrapper{
+    position: relative;
+    max-width: 50%;
+    max-height: fit-content;
+}
+.slider1{
+    display: flex;
+    aspect-ratio: 8/8;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 5px;
+}
+.slider1 img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+}
+.slider_nav1{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider_nav1 a{
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: rgb(18, 127, 199);
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+    margin-top: 10px;
+}
+
+/*contact */
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 44px;
+    margin-top: 33px;
+    color: rgb(29, 84, 203);
+}
+.contact .con_btn1{
+    color: white;
+    background-color: rgb(41, 41, 241);
+    border: none;
+    height: 30px;
+    width: 120px;
+}
+.contact .con_btn2{
+    color: white;
+    background-color: rgb(41, 41, 241);
+    border: none;
+    height: 30px;
+    width: 220px;
+}
+.text img{
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}
+.text span{
+    height: 20px;
+    width: 20px;
+    margin: 8px;
+}
+.text button{
+    display: flex;
+    align-items: center;
+    border-radius: 20px;   
+}
+/* contact form */
+.connect{
+    text-align: center;
+}
+
+.connect input{
+    width: 380px;
+    padding: 8px;
+    font-size: 18px;
+    background-color: transparent;
+    margin-top: 11px;
+    border: 2px solid black;
+
+}
+.connect button{
+    width: 130px;
+    height: 36px;
+    background-color: rgb(39, 26, 184);
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px){
+    nav ul{
+        display: none;
+    }
+    .icon{
+        display: flex;
+        cursor: pointer;
+        justify-content: right;
+        align-items: right;
+    }
+    .showData{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 100px;
+        background-color: rgb(120, 120, 120);
+        width: 95%;
+        height: 240px;
+        gap: 20px;
+        padding: 0%;
+        text-align: center;
+    }
+}    
